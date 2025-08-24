@@ -1,0 +1,274 @@
+
+body {
+    background: #f7f9fb;
+    min-height: 100vh;
+    color: #23272f;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+}
+body.light-mode {
+    background: #f7f9fb;
+    color: #23272f;
+}
+
+
+body.light-mode .gradient-bg {
+    background: #eaf1fa;
+}
+
+
+body.light-mode .project-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06);
+}
+
+
+body.light-mode .tech-badge {
+    background: #eaf1fa;
+    color: #2563eb;
+    border: 1px solid #b6c2d9;
+}
+
+
+body.light-mode .logo-video {
+    background: #f7f9fb;
+    border-color: #2563eb;
+}
+
+body.light-mode #starfield-bg,
+body.light-mode #cobweb-bg {
+    opacity: 0.3;
+    filter: grayscale(0.2) brightness(1.1);
+}
+
+body.light-mode .bg-white {
+    background-color: #f8fafc !important;
+}
+body.light-mode .bg-gray-50 {
+    background-color: #e3e7ef !important;
+}
+body.light-mode .bg-gray-900 {
+    background-color: #1a2233 !important;
+}
+body.light-mode .text-gray-800 {
+    color: #1a2233 !important;
+}
+body.light-mode .text-gray-600 {
+    color: #334155 !important;
+}
+body.light-mode .text-white {
+    color: #1a2233 !important;
+}
+body.light-mode .border-white {
+    border-color: #2563eb !important;
+}
+body.light-mode .shadow-lg {
+    box-shadow: 0 8px 32px 0 rgba(30,41,59,0.10) !important;
+}
+#starfield-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: transparent;
+}
+/* Custom logo video class for easy theming */
+.logo-video {
+    margin-left: -40px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+    background: #232946;
+    border-color: #2563eb;
+}
+/* Cobweb background canvas */
+#cobweb-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: transparent;
+}
+
+body > *:not(#cobweb-bg) {
+    position: relative;
+    z-index: 1;
+}
+/*
+  Custom styles for Takafakare Chapwanya Portfolio
+  Extracted from index.html
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.gradient-bg {
+    background: linear-gradient(135deg, #2563eb 0%, #174ea6 100%);
+    color: #fff;
+}
+
+.hero-intro {
+    background: linear-gradient(135deg, #2563eb 0%, #174ea6 100%);
+    color: #fff !important;
+    box-shadow: 0 8px 32px 0 rgba(30,41,59,0.10);
+    border-radius: 1.5rem;
+    padding: 3rem 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.skill-bar {
+    transition: width 2s ease-in-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.typing-animation {
+    border-right: 2px solid #667eea;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { border-color: #667eea; }
+    51%, 100% { border-color: transparent; }
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #667eea;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+.project-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 12px 0 rgba(30,41,59,0.06);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+
+.tech-badge {
+    background: #eaf1fa;
+    color: #2563eb;
+    border: 1px solid #b6c2d9;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+button, .button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(30,41,59,0.04);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+button:hover, .button:hover {
+    background: #174ea6;
+    color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(30,41,59,0.10);
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+nav, footer {
+    background: #fff;
+    color: #23272f;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    background: #f7f9fb;
+    color: #6b7280;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+.bg-gray-50 {
+    background: #f7f9fb !important;
+}
+.bg-gray-900 {
+    background: #23272f !important;
+}
+.text-gray-800 {
+    color: #23272f !important;
+}
+.text-gray-600 {
+    color: #6b7280 !important;
+}
+.text-white {
+    color: #fff !important;
+}
+.border-white {
+    border-color: #e5e7eb !important;
+}
+.shadow-lg {
+    box-shadow: 0 8px 32px 0 rgba(30,41,59,0.08) !important;
+}
+
+/* Accessibility utilities */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
