@@ -1,800 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takafakare Chapwanya - Full-Stack Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/profile.png" type="image/png">
-    <meta name="theme-color" content="#2563eb">  
-    <!-- SEO --> 
-    <meta name="description" content="Full-Stack Developer portfolio of Takafakare Chapwanya. React, Node.js, Python, AWS. Projects, skills, and contact.">
-    <link rel="canonical" href="https://example.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Takafakare Chapwanya - Full-Stack Developer">
-    <meta property="og:description" content="Building scalable web apps with React, Node.js, Python, AWS.">
-    <meta property="og:image" content="images/profile.png">
-    <meta property="og:url" content="https://example.com/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Takafakare Chapwanya - Full-Stack Developer">
-    <meta name="twitter:description" content="Projects, skills, and contact.">
-    <meta name="twitter:image" content="images/profile.png">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Takafakare Chapwanya",
-      "jobTitle": "Full-Stack Developer",
-      "url": "https://example.com/",
-      "image": "https://example.com/images/profile.png",
-      "sameAs": [
-        "https://github.com/Takachapwanya1999",
-        "https://www.linkedin.com/in/takafakare-chapwanya-098433263/"
-      ]
-    }
-    </script>
-</head>
-<body class="bg-gray-50">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-white focus:text-blue-700 focus:p-2 focus:rounded focus:shadow" aria-label="Skip to main content">Skip to content</a>
-    <!-- Navigation remains at the top -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/profile.png" />
+    <meta name="author" content="Takafakare Chapwanya" />
+    <meta name="description" content="Takafakare Digital Portfolio - Full-Stack Developer" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styling/style.css" />
+    <link rel="stylesheet" href="styling/theme.css" />
+    <link rel="stylesheet" href="styling/navbar.css" />
+    <link rel="stylesheet" href="styling/about.css" />
+    <link rel="stylesheet" href="styling/work.css" />
+    <link rel="stylesheet" href="styling/websites.css" /> 
+    <link rel="stylesheet" href="styling/mobile-menu.css" />
+    <link rel="stylesheet" href="styling/contact.css" />
+    <title>Takafakare Dev</title>
+  </head> 
 
-    <!-- Starfield and Cobweb backgrounds inside main content -->
-    <div style="position:relative; min-height:100vh;">
-        <canvas id="starfield-bg" aria-hidden="true" role="presentation"></canvas>
-        <canvas id="cobweb-bg" aria-hidden="true" role="presentation"></canvas>
-        <!-- All main site content will follow here -->
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold gradient-bg bg-clip-text text-transparent">
-                    <video src="images/logo.mp4" class="logo-video ml-[-120px] h-32 w-32 rounded-full shadow-lg border-4 border-white bg-white" style="display:inline;vertical-align:middle;object-fit:cover;" autoplay loop muted playsinline aria-label="Logo animation"></video>
-                    <span class="ml-0 align-middle text-4xl font-extrabold tracking-tight text-gray-800" style="font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; letter-spacing: 0.02em;">Chap<span style="color:#2563eb;">Tech</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-gray-900">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-gray-900">About</a>
-                    <a href="#skills" class="nav-link text-gray-700 hover:text-gray-900">Skills</a>
-                    <a href="#projects" class="nav-link text-gray-700 hover:text-gray-900">Projects</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900">Contact</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open mobile menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+  <body>
+    <header> 
+      <nav class="pages-nav">
+        <ul class="pages-navbar">
+          <li>
+            <a href="/">
+              <img class="logo" src="images/profile.png" alt="logo"
+            /></a>
+          </li>
+          <!-- <li><a class="nav-item" href="#journey">Journey</a></li>
+          <li><a class="nav-item" href="#work">Work</a></li> -->
+          <li class="nav-social-icons">
+            <a
+              href="https://github.com/Takachapwanya1999"
+              target="_blank"
+              class="nav-social-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/takafakare-chapwanya-098433263/"
+              target="_blank"
+              class="nav-social-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="mailto:chapwanyatakafakare1@gmail.com"
+              target="_blank"
+              class="nav-social-link"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="switch-theme">
+          <!-- <div>Switch<span> Theme</span></div> -->
+          <div class="toggle-switch">
+            <label class="switch-label">
+              <input type="checkbox" class="checkbox" id="themeToggle" />
+              <span class="slider"></span>
+            </label>
+          </div>
         </div>
-    </nav>
-    <!-- Mobile slide-in menu -->
-    <div id="mobile-menu" class="fixed top-16 right-0 h-[calc(100vh-4rem)] w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
-        <nav class="flex flex-col p-6 space-y-4">
-            <a href="#home" class="mobile-nav-link text-gray-800">Home</a>
-            <a href="#about" class="mobile-nav-link text-gray-800">About</a>
-            <a href="#skills" class="mobile-nav-link text-gray-800">Skills</a>
-            <a href="#projects" class="mobile-nav-link text-gray-800">Projects</a>
-            <a href="#contact" class="mobile-nav-link text-gray-800">Contact</a>
-        </nav>
-    </div>
-
-    <main id="main-content" tabindex="-1">
-
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center gradient-bg">
-        <div class="max-w-3xl mx-auto px-6 w-full">
-            <div class="hero-intro fade-in text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                    Hi, I'm <span class="typing-animation" id="typing-text">Takafakare</span>
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 opacity-95">
-                    Full-Stack Developer crafting digital experiences
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToSection('projects')" class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition-colors">
-                        View My Work
-                    </button>
-                    <button onclick="scrollToSection('contact')" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition-colors">
-                        Get In Touch
-                    </button>
-                </div>
-            </div>
+      </nav>
+    </header>
+    <!-------------------------------------------------------------------------- -->
+    <section id="home" class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="images/profile.png"
+              alt="Takafakare Chapwanya"
+              loading="lazy"
+            />
+          </div>
+          <div class="hero-text">
+            <h1>Software Developer</h1>
+            <p class="bio-text">
+              I'm Takafakare Chapwanya, a dedicated full-stack developer with a passion for creating
+              innovative web solutions. I specialize in building scalable applications using modern
+              technologies and best practices.
+            </p>
+          </div>
         </div>
+        <div class="hero-skills">
+          <ul class="tech-stack">
+            <li class="icon">
+              <img src="assets/github.svg" alt="GitHub" />
+              <span>GITHUB</span>
+            </li>
+            <li class="icon">
+              <img src="assets/docker.svg" alt="Docker" />
+              <span>DOCKER</span>
+            </li>
+            <li class="icon">
+              <img src="assets/aws.svg" alt="AWS" />
+              <span>AWS</span>
+            </li>
+            <li class="icon">
+              <img src="assets/css.svg" alt="CSS" />
+              <span>CSS</span>
+            </li>
+            <li class="icon">
+              <img src="assets/javascript.svg" alt="JavaScript" />
+              <span>JAVASCRIPT</span>
+            </li>
+            <li class="icon">
+              <img src="assets/tailwind.svg" alt="Tailwind" />
+              <span>TAILWIND</span>
+            </li>
+            <li class="icon">
+              <img src="assets/vue.svg" alt="Vue.js" />
+              <span>VUE.JS</span>
+            </li>
+            <li class="icon">
+              <img src="assets/react.svg" alt="React" />
+              <span>REACT</span>
+            </li>
+            <li class="icon">
+              <img src="assets/nodejs.svg" alt="Node.js" />
+              <span>NODE.JS</span>
+            </li>
+            <li class="icon">
+              <img src="assets/python.svg" alt="Python" />
+              <span>PYTHON</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------- -->
+    <section id="journey">
+      <div class="container">
+        <div class="journey-heading">My Journey</div>
+        <div class="journey-subtext">My journey this far</div>
+        <div class="journey-content">
+          <ul class="my-journey" data-aos="fade-up"></ul>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------------------- -->
+    <section id="websites">
+      <div class="container">
+        <div class="websites-heading">Websites Developed</div>
+        <div class="websites-subtext">
+          Professional websites I've built for clients
+        </div>
+        <div class="websites-grid">
+          <div class="website-card" data-aos="fade-up" data-aos-duration="800">
+            <div class="website-info">
+              <h3>Grenmetey Investments</h3>
+              <p>Investment firm</p>
+            </div>
+            <a href="https://tgjvsxkx-5173.uks1.devtunnels.ms/" target="_blank" rel="noopener noreferrer" class="website-link" aria-label="Open Grenmetey Investments site">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div
+            class="website-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <div class="website-info">
+              <h3>Farai Furnitures</h3>
+              <p>Class of Elegance</p>
+            </div>
+            <a href="https://www.faraifurnitures.co.za/" target="_blank" class="website-link">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="fade-in">
-                    <div class="w-80 h-80 mx-auto bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center text-white text-6xl font-bold">
-                        <img src="images/profile.png" alt="Profile Photo" class="w-80 h-80 object-cover rounded-full border-4 border-white shadow-lg" loading="lazy" />
-                    </div>
-                </div>
-                <div class="fade-in">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">
-                        Passionate Full-Stack Developer
-                    </h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        I'm Takafakare Chapwanya, a dedicated full-stack developer with a passion for creating 
-                        innovative web solutions. I specialize in building scalable applications using modern 
-                        technologies and best practices.
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
-                        With expertise in both frontend and backend development, I enjoy tackling complex 
-                        challenges and turning ideas into reality. I'm always eager to learn new technologies 
-                        and contribute to meaningful projects.
-                    </p>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">Frontend</h4>
-                            <p class="text-gray-600 text-sm">React, Vue.js, JavaScript, TypeScript</p>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 mb-2">Backend</h4>
-                            <p class="text-gray-600 text-sm">Node.js, Python, PHP, Databases</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-------------------------------------------------------------------------- -->
+    <section id="work">
+      <div class="container">
+        <div class="project-heading">Projects Developed</div>
+        <div id="filter-container">
+          <label for="filter">Filter: </label>
+          <select id="filter">
+            <option value="all">All</option>
+            <option value="personal">Personal Projects</option>
+          </select>
         </div>
+        <div class="project-container"></div>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Certifications</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
+    <!-------------------------------------------------------------------------- -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-heading">Contact Me</div>
+        <div class="contact-subtext">Let's work together</div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Get in Touch</h3>
+            <p>Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:chapwanyatakafakare1@gmail.com">chapwanyatakafakare1@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/takafakare-chapwanya-098433263/" target="_blank">LinkedIn Profile</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/Takachapwanya1999" target="_blank">GitHub Profile</a>
+              </div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">Certified Ethical Hacker (CEH)</h3>
-                    <p class="text-gray-600 text-sm">EC-Council, 2024</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">AWS Certified Solutions Architect</h3>
-                    <p class="text-gray-600 text-sm">Amazon Web Services, 2023</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Technologies</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <!-- Tech Stack Visual -->
-            <div class="flex flex-wrap justify-center gap-6 mb-12 fade-in">
-                <img src="assets/react.svg" alt="React" class="w-12 h-12" title="React" loading="lazy">
-                <img src="assets/vue.svg" alt="Vue.js" class="w-12 h-12" title="Vue.js" loading="lazy">
-                <img src="assets/javascript.svg" alt="JavaScript" class="w-12 h-12" title="JavaScript" loading="lazy">
-                <img src="assets/css.svg" alt="CSS" class="w-12 h-12" title="CSS" loading="lazy">
-                <img src="assets/tailwind.svg" alt="Tailwind" class="w-12 h-12" title="Tailwind" loading="lazy">
-                <img src="assets/nodejs.svg" alt="Node.js" class="w-12 h-12" title="Node.js" loading="lazy">
-                <img src="assets/python.svg" alt="Python" class="w-12 h-12" title="Python" loading="lazy">
-                <img src="assets/database.svg" alt="Database" class="w-12 h-12" title="Database" loading="lazy">
-                <img src="assets/github.svg" alt="GitHub" class="w-12 h-12" title="GitHub" loading="lazy">
-                <img src="assets/docker.svg" alt="Docker" class="w-12 h-12" title="Docker" loading="lazy">
-                <img src="assets/aws.svg" alt="AWS" class="w-12 h-12" title="AWS" loading="lazy">
-                <img src="assets/ethical-hacking.svg" alt="Ethical Hacking" class="w-12 h-12" title="Ethical Hacking" loading="lazy">
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="fade-in bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <div class="text-3xl mb-4">🎨</div>
-                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
-                    <div class="space-y-3">
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/react.svg" alt="React" class="w-6 h-6"> React.js
-                                </span>
-                                <span class="text-sm text-gray-500">90%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" data-width="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/javascript.svg" alt="JavaScript" class="w-6 h-6"> JavaScript
-                                </span>
-                                <span class="text-sm text-gray-500">95%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" data-width="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/css.svg" alt="CSS" class="w-6 h-6"> CSS
-                                    <img src="assets/tailwind.svg" alt="Tailwind" class="w-6 h-6"> Tailwind
-                                </span>
-                                <span class="text-sm text-gray-500">88%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" data-width="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/vue.svg" alt="Vue.js" class="w-6 h-6"> Vue.js
-                                </span>
-                                <span class="text-sm text-gray-500">80%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full" data-width="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <div class="text-3xl mb-4">⚙️</div>
-                    <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
-                    <div class="space-y-3">
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/nodejs.svg" alt="Node.js" class="w-6 h-6"> Node.js
-                                </span>
-                                <span class="text-sm text-gray-500">85%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-green-500 to-blue-600 h-2 rounded-full" data-width="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/python.svg" alt="Python" class="w-6 h-6"> Python
-                                </span>
-                                <span class="text-sm text-gray-500">80%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-green-500 to-blue-600 h-2 rounded-full" data-width="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/database.svg" alt="Database" class="w-6 h-6"> Databases
-                                </span>
-                                <span class="text-sm text-gray-500">82%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-green-500 to-blue-600 h-2 rounded-full" data-width="82"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in bg-white p-6 rounded-xl shadow-lg card-hover">
-                    <div class="text-3xl mb-4">🛠️</div>
-                    <h3 class="text-xl font-semibold mb-4">Tools & Others</h3>
-                    <div class="space-y-3">
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/github.svg" alt="GitHub" class="w-6 h-6"> Git/GitHub
-                                </span>
-                                <span class="text-sm text-gray-500">92%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-600 h-2 rounded-full" data-width="92"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/docker.svg" alt="Docker" class="w-6 h-6"> Docker
-                                </span>
-                                <span class="text-sm text-gray-500">75%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-600 h-2 rounded-full" data-width="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/aws.svg" alt="AWS" class="w-6 h-6"> AWS/Cloud
-                                </span>
-                                <span class="text-sm text-gray-500">78%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-purple-500 to-pink-600 h-2 rounded-full" data-width="78"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="flex items-center gap-2 text-sm font-medium">
-                                    <img src="assets/ethical-hacking.svg" alt="Ethical Hacking" class="w-6 h-6"> Ethical Hacking
-                                </span>
-                                <span class="text-sm text-gray-500">70%</span>
-                            </div>
-                            <div class="bg-gray-200 rounded-full h-2">
-                                <div class="skill-bar bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full" data-width="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="fade-in project-card rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                        <div class="text-white text-4xl">🚀</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3">E-Commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">Full-stack e-commerce solution with React frontend and Node.js backend, featuring payment integration and admin dashboard.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">MongoDB</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <button class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</button>
-                            <button class="text-gray-600 hover:text-gray-800 font-medium">GitHub</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in project-card rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
-                        <div class="text-white text-4xl">📱</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3">Task Management App</h3>
-                        <p class="text-gray-600 mb-4">Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-badge">Vue.js</span>
-                            <span class="tech-badge">Express</span>
-                            <span class="tech-badge">Socket.io</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <button class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</button>
-                            <button class="text-gray-600 hover:text-gray-800 font-medium">GitHub</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in project-card rounded-xl overflow-hidden shadow-lg card-hover">
-                    <div class="h-48 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                        <div class="text-white text-4xl">📊</div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-3">Analytics Dashboard</h3>
-                        <p class="text-gray-600 mb-4">Data visualization dashboard with interactive charts, real-time metrics, and customizable reporting features.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <button class="text-blue-600 hover:text-blue-800 font-medium">Live Demo</button>
-                            <button class="text-gray-600 hover:text-gray-800 font-medium">GitHub</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Details Section -->
-    <section id="project-details" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Project Case Studies</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-                    <p class="text-gray-600 mb-2">A scalable e-commerce solution with payment integration, admin dashboard, and real-time analytics. Built with React, Node.js, and MongoDB.</p>
-                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
-                    <p class="text-gray-600 mb-2">A collaborative app with drag-and-drop, team features, and real-time updates. Built with Vue.js, Express, and Socket.io.</p>
-                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 gradient-bg">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-4xl font-bold text-white mb-4">Let's Work Together</h2>
-                <div class="w-20 h-1 bg-white mx-auto rounded"></div>
-                <p class="text-white/90 mt-6">Ready to bring your ideas to life? Let's discuss your next project!</p>
-                <!-- Resume link hidden until file is available -->
-                <!-- <a href="resume.pdf" download class="inline-block mt-6 px-6 py-2 bg-white text-gray-800 rounded-full font-semibold shadow hover:bg-gray-100 transition-colors">Download Resume</a> -->
-                <div class="flex justify-center gap-4 mt-6">
-                    <a href="https://github.com/Takachapwanya1999" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile" class="text-white hover:text-blue-200 text-2xl"><img src="assets/github.svg" class="w-8 h-8" alt="GitHub" loading="lazy"></a>
-                    <a href="https://www.linkedin.com/in/takafakare-chapwanya-098433263/" target="_blank" rel="noopener noreferrer" aria-label="Open my LinkedIn profile" class="text-white hover:text-blue-200 text-2xl"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.041 0 3.601 2.002 3.601 4.604v5.592z"/></svg></a>
-                    <a href="mailto:chapwanyatakafakare1@gmail.com" aria-label="Send me an email" class="text-white hover:text-blue-200 text-2xl"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-8 h-8"><path d="M12 13.065l-8-5.065v10h16v-10l-8 5.065zm8-7.065h-16c-1.104 0-2 .896-2 2v.217l10 6.333 10-6.333v-.217c0-1.104-.896-2-2-2z"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call To Action -->
-    <section aria-labelledby="cta-title" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="hero-intro text-center">
-                <h2 id="cta-title" class="text-3xl md:text-4xl font-bold mb-4">Have a project in mind?</h2>
-                <p class="text-lg opacity-95 mb-8">I’m open to full-time roles and select freelance engagements. Let’s build something great.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToSection('contact')" class="bg-white text-blue-700 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition-colors">Contact Me</button>
-                    <a href="#projects" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition-colors">View Projects</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Blog/Articles Section -->
-    <section id="blog" class="py-20 bg-gray-50 hidden">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Blog & Articles</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">How to Secure Your Web Apps</h3>
-                    <p class="text-gray-600 mb-2">Best practices for web application security in 2025.</p>
-                    <a href="#" class="text-blue-600 hover:underline">Read Article</a>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg fade-in">
-                    <h3 class="text-xl font-semibold mb-2">Modern JavaScript Tips</h3>
-                    <p class="text-gray-600 mb-2">Level up your JS skills with these advanced tips and tricks.</p>
-                    <a href="#" class="text-blue-600 hover:underline">Read Article</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline/Experience Section -->
-    <section id="timeline" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Experience Timeline</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="relative border-l-4 border-blue-200 pl-8">
-                <div class="mb-10 fade-in">
-                    <div class="text-blue-600 font-semibold">2025</div>
-                    <div class="text-lg font-bold">Senior Full-Stack Developer</div>
-                    <div class="text-gray-600">Tech Innovations Ltd.</div>
-                </div>
-                <div class="mb-10 fade-in">
-                    <div class="text-blue-600 font-semibold">2023 - 2024</div>
-                    <div class="text-lg font-bold">Full-Stack Developer</div>
-                    <div class="text-gray-600">Web Solutions Inc.</div>
-                </div>
-                <div class="mb-10 fade-in">
-                    <div class="text-blue-600 font-semibold">2021 - 2023</div>
-                    <div class="text-lg font-bold">Frontend Developer</div>
-                    <div class="text-gray-600">Creative Studio</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Live Demos Section -->
-    <section id="live-demos" class="py-20 bg-white hidden">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Live Demos</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
-                    <iframe src="https://your-ecommerce-demo.com" class="w-full h-64 rounded-lg border" title="E-Commerce Demo" loading="lazy"></iframe>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
-                    <iframe src="https://your-taskapp-demo.com" class="w-full h-64 rounded-lg border" title="Task App Demo" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Open Source Contributions Section -->
-    <section id="open-source" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Open Source Contributions</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <ul class="space-y-6">
-                <li class="bg-white p-6 rounded-xl shadow fade-in">
-                    <a href="https://github.com/someproject" class="text-blue-600 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">SomeProject</a> — Fixed bugs and improved documentation.
-                </li>
-                <li class="bg-white p-6 rounded-xl shadow fade-in">
-                    <a href="https://github.com/anotherproject" class="text-blue-600 font-semibold hover:underline" target="_blank" rel="noopener noreferrer">AnotherProject</a> — Added new features and wrote tests.
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Code Samples Section -->
-    <section id="code-samples" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Code Samples</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <h3 class="text-lg font-semibold mb-2">React Component</h3>
-                    <pre class="bg-gray-200 rounded p-4 text-xs overflow-x-auto"><code>{`function Button({ children }) {
-  return <button className="px-4 py-2 bg-blue-600 text-white rounded">{children}</button>;
-}`}</code></pre>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <h3 class="text-lg font-semibold mb-2">Node.js API Route</h3>
-                    <pre class="bg-gray-200 rounded p-4 text-xs overflow-x-auto"><code>{`app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello, world!' });
-});`}</code></pre>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <a href="https://gist.github.com/Takachapwanya1999" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">See more on GitHub Gist</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Introduction Section -->
-    <section id="video-intro" class="py-20 bg-gray-50 hidden">
-        <div class="max-w-2xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Video Introduction</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="flex justify-center fade-in">
-                <video controls class="rounded-lg shadow-lg w-full max-w-xl">
-                    <source src="video/intro.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup Section -->
-    <section id="newsletter" class="py-20 bg-white">
-        <div class="max-w-2xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Newsletter Signup</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <form class="flex flex-col sm:flex-row gap-4 justify-center fade-in" onsubmit="handleSubmit(event)">
-                <input type="email" placeholder="Your email address" required class="px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-400">
-                <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">Subscribe</button>
+          </div>
+          <div class="contact-form" data-aos="fade-left">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
             </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="space-y-6 fade-in">
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h3 class="font-semibold mb-2">What technologies do you specialize in?</h3>
-                    <p class="text-gray-600">I specialize in React, Node.js, Python, AWS, and modern web technologies.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h3 class="font-semibold mb-2">Are you available for freelance or full-time work?</h3>
-                    <p class="text-gray-600">Yes, I am open to both freelance and full-time opportunities. Please contact me for details.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow">
-                    <h3 class="font-semibold mb-2">Can you help with project consulting?</h3>
-                    <p class="text-gray-600">Absolutely! I offer consulting services for web and cloud projects.</p>
-                </div>
-            </div>
+    <!-------------------------------------------------------------------------- -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; <span id="year"></span> Takafakare Chapwanya. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#journey">Journey</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+          </div>
         </div>
-    </section>
-
-    <!-- Downloadable Portfolio Section -->
-    <section id="download-portfolio" class="py-20 bg-white hidden">
-        <div class="max-w-2xl mx-auto px-6 text-center fade-in">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Download My Portfolio</h2>
-            <div class="w-20 h-1 gradient-bg mx-auto rounded mb-8"></div>
-            <a href="portfolio.pdf" download class="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors">Download PDF</a>
-        </div>
-    </section>
-
-    <!-- Availability Calendar Section -->
-    <section id="availability" class="py-20 bg-gray-50 hidden">
-        <div class="max-w-2xl mx-auto px-6 text-center fade-in">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Availability</h2>
-            <div class="w-20 h-1 gradient-bg mx-auto rounded mb-8"></div>
-            <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendar%40gmail.com" style="border:0" width="100%" height="400" frameborder="0" scrolling="no" loading="lazy"></iframe>
-        </div>
-    </section>
-
-    <!-- Client Logos Section -->
-    <section id="clients" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Clients</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="flex flex-wrap justify-center gap-8 fade-in">
-                <img src="images/grenmetey.png" alt="Grenmetey Investments Pvt Ltd" class="h-24 w-auto bg-white rounded-lg shadow-lg p-2 border-2 border-gray-200" style="object-fit:contain;" loading="lazy" />
-                <a href="https://www.faraifurnitures.co.za/" target="_blank" rel="noopener noreferrer" aria-label="Visit Farai Furnitures website" class="inline-flex items-center justify-center">
-                    <img src="images/farai.png" alt="Farai Furnitures — Class of Elegance" title="Farai Furnitures" class="h-24 w-auto bg-black rounded-lg shadow-lg p-2 border-2 border-gray-200" style="object-fit:contain;" loading="lazy" />
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Accessibility Section -->
-    <section id="accessibility" class="py-20 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-6 text-center fade-in">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Accessibility Statement</h2>
-            <div class="w-20 h-1 gradient-bg mx-auto rounded mb-8"></div>
-            <p class="text-gray-600">I am committed to building accessible and inclusive web applications. If you encounter any accessibility issues on this site, please contact me and I will address them promptly.</p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Testimonials</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <p class="text-gray-700 italic mb-4">"Takafakare is a highly skilled developer who always delivers on time and exceeds expectations."</p>
-                    <div class="font-semibold text-gray-800">— Jane Doe, Project Manager</div>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-xl shadow fade-in">
-                    <p class="text-gray-700 italic mb-4">"A pleasure to work with, always brings creative solutions to the table."</p>
-                    <div class="font-semibold text-gray-800">— John Smith, Team Lead</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hobbies & Interests Section -->
-    <section id="hobbies" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12 fade-in">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Hobbies & Interests</h2>
-                <div class="w-20 h-1 gradient-bg mx-auto rounded"></div>
-            </div>
-            <div class="flex flex-wrap justify-center gap-8 fade-in">
-                <div class="bg-white p-6 rounded-xl shadow text-center w-48">
-                    <div class="text-3xl mb-2">🎸</div>
-                    <div class="font-semibold">Playing Guitar</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow text-center w-48">
-                    <div class="text-3xl mb-2">🏃‍♂️</div>
-                    <div class="font-semibold">Running</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow text-center w-48">
-                    <div class="text-3xl mb-2">📚</div>
-                    <div class="font-semibold">Reading Tech Blogs</div>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow text-center w-48">
-                    <div class="text-3xl mb-2">🌍</div>
-                    <div class="font-semibold">Traveling</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    </main>
-    <!-- Close wrapper div started near top -->
-    </div>
-    <!-- Footer moved here, right after Hobbies & Interests -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-10">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">About</h3>
-                    <p class="text-gray-400">Full‑Stack Developer focused on performant web apps, delightful UX, and scalable cloud systems.</p>
-                </div>
-                <nav aria-label="Footer navigation" class="grid grid-rows-1">
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="#home" class="hover:underline">Home</a></li>
-                        <li><a href="#about" class="hover:underline">About</a></li>
-                        <li><a href="#skills" class="hover:underline">Skills</a></li>
-                        <li><a href="#projects" class="hover:underline">Projects</a></li>
-                        <li><a href="#contact" class="hover:underline">Contact</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>
-                            <a href="mailto:chapwanyatakafakare1@gmail.com" class="hover:underline" aria-label="Email Takafakare">
-                                chapwanyatakafakare1@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/263631639012" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:underline" aria-label="WhatsApp">
-                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:1.2em;height:1.2em;filter:invert(1);" loading="lazy" />
-                                WhatsApp: +263 63 163 9012
-                            </a>
-                        </li>
-                        <li class="text-gray-400">Harare, Zimbabwe • Remote-friendly</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Connect</h3>
-                    <div class="flex items-center gap-5">
-                        <a href="https://github.com/Takachapwanya1999" target="_blank" rel="noopener" aria-label="GitHub" class="flex items-center gap-2 text-gray-300 hover:text-white">
-                            <img src="assets/github.svg" alt="GitHub" class="w-5 h-5" loading="lazy" />
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/takafakare-chapwanya-098433263/" target="_blank" rel="noopener" aria-label="LinkedIn" class="flex items-center gap-2 text-gray-300 hover:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5V9h3v10zM6.5 7.732A1.75 1.75 0 1 1 6.5 4.232a1.75 1.75 0 0 1 0 3.5zM20 19h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967V19h-3V9h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.041 0 3.601 2.002 3.601 4.604V19z"/></svg>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
-                    <p class="text-gray-400 mb-3">Get occasional updates on projects and articles.</p>
-                    <form class="flex gap-3" onsubmit="handleSubmit(event)" aria-label="Newsletter signup form">
-                        <label for="footer-email" class="sr-only">Email address</label>
-                        <input id="footer-email" name="email" type="email" required placeholder="you@example.com" class="px-4 py-2 rounded-md border border-gray-300 bg-white text-gray-800 w-full" aria-describedby="newsletter-hint">
-                        <button type="submit" class="px-5 py-2 rounded-md bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors">Subscribe</button>
-                    </form>
-                    <p id="newsletter-hint" class="text-xs text-gray-500 mt-2">No spam. Unsubscribe anytime.</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-gray-400 text-sm">&copy; <span id="year"></span> Takafakare Chapwanya. All rights reserved.</p>
-                <div class="flex items-center gap-4 text-sm">
-                    <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
-                    <span class="text-gray-700">|</span>
-                    <a href="#" class="text-gray-400 hover:text-white">Terms</a>
-                    <a href="#home" class="ml-4 text-gray-300 hover:text-white" aria-label="Back to top">Back to top ↑</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </footer>
-
-    <!-- Light/Dark Mode Toggle -->
-    <button id="theme-toggle" class="fixed bottom-6 right-6 z-50 bg-white text-gray-800 border border-gray-300 rounded-full shadow-lg p-3 hover:bg-gray-100 transition-colors" aria-label="Toggle color theme">
-        <span id="theme-icon">🌙</span>
+    
+    <!-- Background Canvases -->
+    <canvas id="starfield-bg"></canvas>
+    <canvas id="cobweb-bg"></canvas>
+    
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-    <script src="script.js" defer></script>
-    </body>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+        <li><a href="#work" class="mobile-nav-link">Work</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+    <script src="src/about.js"></script>
+    <script src="src/work.js"></script>
+    <script src="src/theme.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

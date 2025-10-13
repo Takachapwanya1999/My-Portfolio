@@ -1,0 +1,377 @@
+#work {
+  text-align: center;
+}
+
+.links {
+  color: var(--span-color) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--span-color);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.links:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  background: var(--span-color);
+  color: white !important;
+}
+
+.project-heading {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 42px;
+  font-style: normal;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--text-color) 0%,
+    var(--span-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.project-container {
+  padding: 1rem;
+}
+
+/* Filter dropdown styling */
+#filter-container {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#filter-container label {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+#filter {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-color, #fff);
+  color: var(--text-color, #333);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+#filter:focus {
+  outline: none;
+  border-color: var(--span-color);
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+/* Journey Section Styles */
+#journey {
+  text-align: center;
+  padding: 2rem 0;
+  overflow: visible;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 53, 69, 0.02) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.journey-heading {
+  position: relative;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 42px;
+  font-style: normal;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    135deg,
+    var(--text-color) 0%,
+    var(--span-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.journey-subtext {
+  font-size: 1.2rem;
+  color: var(--text-color, #666);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.journey-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: visible;
+}
+
+/* Responsive styles for filter container */
+@media screen and (max-width: 576px) {
+  #filter {
+    width: 100%;
+  }
+}
+
+.project-top-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.col-work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  border: 1px dashed transparent !important;
+  margin: 0;
+  height: auto;
+  text-align: start;
+  background: var(--bg-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  /* max-width: 1400px; */
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+/* Project content styling */
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.tech-stack-text {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.project-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.9;
+  text-align: start;
+  margin-top: 1rem;
+}
+
+/* Ensure proper spacing between project elements */
+.col-work > * {
+  margin-bottom: 1rem;
+}
+
+.col-work > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Image container styling */
+.col-work a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.inactive-link {
+  cursor: not-allowed;
+  pointer-events: none;
+  /* Prevents clicking */
+  color: gray;
+  /* Grayed-out text */
+  opacity: 0.6;
+  /* Makes it semi-transparent */
+}
+
+@media screen and (max-width: 768px) {
+  .project-heading,
+  .journey-heading {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+  }
+
+  .journey-subtext {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #filter-container {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  #filter {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project-img {
+    max-height: 250px;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack-text {
+    font-size: 1rem;
+  }
+
+  .col-work {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-container {
+    padding: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-heading,
+  .journey-heading {
+    font-size: 28px;
+    margin-bottom: 1rem;
+  }
+
+  .journey-subtext {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  #filter-container {
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  #filter {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .col-work {
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+  }
+
+  .project-container {
+    padding: 0.25rem;
+  }
+
+  .project-top-list {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .tech-stack-text,
+  .project-text {
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .project-img {
+    max-width: 100%;
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-heading,
+  .journey-heading {
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+  }
+
+  .journey-subtext {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #filter {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .project-top-list {
+    gap: 0.5rem;
+  }
+
+  .tech-stack-text,
+  .project-text {
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+  }
+}
