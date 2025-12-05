@@ -248,10 +248,10 @@ footer {
     color: #23272f !important;
 }
 .text-gray-600 {
-    color: #6b7280 !important;
+    color: #6b7280 !important; 
 }
 .text-white {
-    color: #fff !important;
+    color: #fff !important; 
 }
 .border-white {
     border-color: #e5e7eb !important;
@@ -264,7 +264,7 @@ footer {
 .sr-only {
     position: absolute;
     width: 1px;
-    height: 1px;
+    height: 1px; 
     padding: 0;
     margin: -1px;
     overflow: hidden;

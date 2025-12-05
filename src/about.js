@@ -4,11 +4,11 @@ const education = [
     url: '#',
     description: 'Tech Innovations Ltd.',
     additionalText: 'Leading development of scalable web applications using React, Node.js, and AWS.',
-    date: '2025'
+    date: '2025'    
   },
   {
     title: 'Full-Stack Developer',
-    url: '#',
+    url: '#', 
     description: 'Web Solutions Inc.',
     additionalText: 'Developed full-stack e-commerce platforms and internal tools.',
     date: '2023 - 2024'
